@@ -5,7 +5,9 @@ import logo from './assets/logo.png';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image source={logo} style={styles.img}/>
+      <View style={styles.barraInicio}>
+        <Image source={logo} style={styles.img}/>        
+      </View>
       <Text style={styles.texto}>Gestão Rural!</Text>
       <Text style={styles.rodape}>Desenvolvido por Celso Reis</Text>
     </View>
@@ -15,9 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#006400',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#946400',
   },
   texto:{
     fontSize: 25,
@@ -25,11 +25,17 @@ const styles = StyleSheet.create({
     color: '#fff'
   },
   img:{
-    width: 210,
-    height: 65,
-    marginBottom: 200
+    width: 185,
+    height: 55,
+    marginBottom: 20,
+    marginTop: 35,
   },
   rodape:{
     color: '#fff',
+  },
+  barraInicio:{
+    height: 100,
+    backgroundColor: '#006400',
+    alignItems: 'center',
   }
 });
