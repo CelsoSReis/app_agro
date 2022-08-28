@@ -1,31 +1,23 @@
 import React from 'react';
-import { StyleSheet, Text, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 //importa componentes
-import Topo from './components/cabecalho';
 import Login from './components/login';
+import Cadastro from './components/Cadastro';
+
+//componente/ Variável responsável por definir rotas
+const Tabs = createBottomTabNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Topo />
-      <Login />
-      <Text style={styles.texto}>Gestão Rural!</Text>
-      <Text style={styles.rodape}>Desenvolvido por Celso Reis</Text>
-    </View>
+    
+    <NavigationContainer>
+      <Tabs.Navigator>
+        <Tabs.Screen name="Login" component = { Login }/>
+        <Tabs.Screen name="Cadastro" component = { Cadastro } />
+      </Tabs.Navigator>
+    </NavigationContainer>
+    
     );
 }
-
-const styles = StyleSheet.create ({
-  container: {
-    flex: 1,
-    backgroundColor: '#946400',
-  },
-  texto:{
-    fontSize: 25,
-    marginBottom: 200,
-    color: '#fff',
-  },
-  rodape:{
-    color: '#fff',
-  },});

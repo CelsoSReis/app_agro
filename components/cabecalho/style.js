@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         width: 185,
         height: 55,
         marginBottom: 20,
-        marginTop: 35,
+        marginTop: 20,
       },
 });
 export default styles;
