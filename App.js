@@ -1,20 +1,22 @@
 import React from 'react';
-import { Image, StyleSheet, Text, View} from 'react-native';
-import logo from './assets/logo.png';
+import { StyleSheet, Text, View} from 'react-native';
+
+//importa componentes
+import Topo from './components/cabecalho';
+import Login from './components/login';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.barraInicio}>
-        <Image source={logo} style={styles.img}/>        
-      </View>
+      <Topo />
+      <Login />
       <Text style={styles.texto}>Gestão Rural!</Text>
       <Text style={styles.rodape}>Desenvolvido por Celso Reis</Text>
     </View>
     );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create ({
   container: {
     flex: 1,
     backgroundColor: '#946400',
@@ -22,20 +24,8 @@ const styles = StyleSheet.create({
   texto:{
     fontSize: 25,
     marginBottom: 200,
-    color: '#fff'
-  },
-  img:{
-    width: 185,
-    height: 55,
-    marginBottom: 20,
-    marginTop: 35,
+    color: '#fff',
   },
   rodape:{
     color: '#fff',
-  },
-  barraInicio:{
-    height: 100,
-    backgroundColor: '#006400',
-    alignItems: 'center',
-  }
-});
+  },});
