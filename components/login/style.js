@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { color } from "react-native-reanimated";
 
 const styles = StyleSheet.create ({
     container: {
@@ -11,10 +12,29 @@ const styles = StyleSheet.create ({
         color: '#fff',
         textAlign: 'center',
     },
-    button: {
-        marginTop:200,
-        width: 250,
+    //Botão
+    botao: {
+        marginTop:35,
+        marginBottom: 35,
+        width: 240,
+        height: 45,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: '#ff0000',
+        borderRadius: 20,
+        flexDirection: "row"
     },
+    textoBotao:{
+        fontSize:18,
+        fontWeight: 'bold',
+        color: '#fff',
+    },
+    iconBotao:{
+        width: 25,
+        height: 25,
+        margin: 5
+    },
+
     header:{
         marginTop: 45,
     }
