@@ -17,8 +17,14 @@ export default function Login (props) {
             
             <View style={styles.button}>
                 <Button 
-                    title="Entrar"
+                    title="Login"
                     onPress = { ()=>{props.navigation.navigate( 'Home' )} }
+                />
+            </View>
+            <View style={styles.button}>    
+                <Button 
+                    title="Cadastrar"
+                    onPress = { ()=>{props.navigation.navigate( 'Cadastrar' )} }
                 />
             </View>
 

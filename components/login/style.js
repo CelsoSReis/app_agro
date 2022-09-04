@@ -13,9 +13,10 @@ const styles = StyleSheet.create ({
     },
     button: {
         marginTop:200,
+        width: 250,
     },
     header:{
-        marginTop: 20,
+        marginTop: 45,
     }
 });
 export default styles;
