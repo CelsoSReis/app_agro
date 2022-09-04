@@ -1,27 +1,27 @@
 import React from "react";
-import{View, Text, StyleSheet} from 'react-native';
+import{View, Button} from 'react-native';
 
 //Importando componentes
 import Topo from '../cabecalho';
 
-export default function Login(){
-    return(
+//Importação de estilos
+import styles from './style';
+
+export default function Login (props) {
+    return (
         <View style={styles.container}>
-            <Topo />
-            <Text style={styles.texto}>Login</Text>
+            
+            <View style={styles.header}>
+                <Topo />
+            </View>
+            
+            <View style={styles.button}>
+                <Button 
+                    title="Entrar"
+                    onPress = { ()=>{props.navigation.navigate( 'Home' )} }
+                />
+            </View>
+
         </View>
     );
-}
-const styles = StyleSheet.create ({
-    container: {
-      flex: 1,
-      backgroundColor: '#006400',
-      alignItems: 'center',
-    },
-    texto:{
-        fontSize:20,
-        color: '#fff',
-        textAlign: 'center',
-    }
-});
-  
+};
