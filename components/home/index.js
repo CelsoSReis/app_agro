@@ -21,7 +21,7 @@ export default function Home(){
                 <View style={styles.header}>
                     <Topo />
                 </View>
-                    <View style={{alignItems: 'center'}}>
+                    <View style={{flexWrap: 'wrap', flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
                     
                     <Pressable style={styles.homeBotoes}>
                         <Image source={ iconAnimais } style={ styles.imgIcons}/>

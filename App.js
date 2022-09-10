@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+
 //importa componentes
 import Login from "./components/login";
 import Cadastro from "./components/Cadastro";

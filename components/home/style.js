@@ -8,13 +8,13 @@ const styles = StyleSheet.create({
         marginBottom: 30
     },
     homeBotoes:{
-        width: 200,
+        width: 160,
         height: 100,
         alignItems: "center",
         justifyContent: "center",
         flexDirection:"column",
         backgroundColor: '#fff',
-        marginBottom: 20,
+        margin: 10,
         borderRadius: 10,
         paddingHorizontal: 20,
         paddingVertical: 20,

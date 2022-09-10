@@ -12,11 +12,11 @@ const styles = StyleSheet.create ({
         color: '#fff',
         textAlign: 'center',
     },
-    //Botão
+    //Botão Login
     botao: {
-        marginTop:35,
+        marginTop:30,
         marginBottom: 35,
-        width: 240,
+        width: 260,
         height: 45,
         alignItems: "center",
         justifyContent: "center",
@@ -37,6 +37,41 @@ const styles = StyleSheet.create ({
 
     header:{
         marginTop: 45,
+    },
+    //BOX INPUT LOGIN
+    boxInputLogin:{
+        marginVertical:140
+    },
+    //Login Input
+    inputUsuario: {
+        borderWidth: 1,
+        borderColor: '#fff',
+        backgroundColor: '#fff',
+        borderRadius: 30,
+        height: 40,
+        width: 260,
+        padding: 10,
+        margin: 7,
+        marginBottom: 15,
+        textAlign: 'center',
+        fontWeight: '500',
+        fontSize: 17,
+    },
+    inputSenha:{
+        borderWidth: 1,
+        borderRadius: 30,
+        backgroundColor: '#fff',
+        height: 40,
+        width: 260,
+        padding: 10,
+        margin: 7,
+        textAlign: 'center',
+        fontWeight: '500',
+        fontSize: 17,
+    },
+    textInputLogin:{
+        color: '#fff',
+        fontWeight: '500',
     }
 });
 export default styles;

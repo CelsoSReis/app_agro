@@ -1,5 +1,5 @@
 import React from "react";
-import{View, Button, Pressable, Text, Image, ImageBackground} from 'react-native';
+import{View, Button, Pressable, Text, Image, ImageBackground, TextInput} from 'react-native';
 
 //Importando componentes
 import Topo from '../cabecalho';
@@ -10,6 +10,7 @@ import styles from './style';
 //imagens
 import icoEntrar from './imgLogin/entrar.png';
 import imgFundo from './imgLogin/fundo.png';
+import { color } from "react-native-reanimated";
 
 export default function Login (props) {
     return (
@@ -19,6 +20,17 @@ export default function Login (props) {
                     <Topo />
                 </View>
                 
+                <View style= { styles.boxInputLogin}>
+                    <View>
+                        <Text style={ styles.textInputLogin}>Usuário</Text>
+                        <TextInput style = { styles.inputUsuario } />
+                    </View>
+                    <View>
+                        <Text style={ styles.textInputLogin}>Senha </Text>
+                        <TextInput style = { styles. inputSenha }/>
+                    </View>
+                </View>
+
                 <View>
                     <Pressable style={styles.botao} onPress = { ()=>{props.navigation.navigate( 'Home' )} }>
                         <Image style={styles.iconBotao} source={icoEntrar}/>
