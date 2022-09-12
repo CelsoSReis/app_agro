@@ -18,17 +18,17 @@ export default function Animais (props) {
                             <Text>Animais</Text>
                         </Pressable>
                     
-                        <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Maquinas' )} }>
+                        <Pressable style={styles.homeBotoes}>
                             
                             <Text>Máquinas</Text>
                         </Pressable>
 
-                        <Pressable style={styles.homeBotoes}onPress = { ()=>{props.navigation.navigate( 'Benfeitorias' )} } >
+                        <Pressable style={styles.homeBotoes}>
                             
                             <Text>Benfeitorias</Text>
                         </Pressable>
 
-                        <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Relatorios' )} } >
+                        <Pressable style={styles.homeBotoes}>
                             
                             <Text>Relatórios</Text>
                         </Pressable>

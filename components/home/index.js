@@ -28,20 +28,26 @@ export default function Home(props){
                         <Text>Animais</Text>
                     </Pressable>
                     
-                    <Pressable style={styles.homeBotoes}>
+                    <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Maquinas' )} }>
                     <Image source={ iconMaquinas } style={ styles.imgIcons}/>
                         <Text>Máquinas</Text>
                     </Pressable>
 
-                    <Pressable style={styles.homeBotoes}>
+                    <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Benfeitorias' )} }>
                         <Image source={ iconBenfeitorias } style={ styles.imgIcons}/>
                         <Text>Benfeitorias</Text>
                     </Pressable>
 
-                    <Pressable style={styles.homeBotoes}>
+                    <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Agricola' )} } >
+                        <Image source={ iconBenfeitorias } style={ styles.imgIcons}/>
+                        <Text>Agrícola</Text>
+                    </Pressable>
+
+                    <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Relatorios' )} }>
                         <Image source={ iconRelatorios } style={ styles.imgIcons}/>
                         <Text>Relatórios</Text>
                     </Pressable>
+
                     
                 </View>
                 
