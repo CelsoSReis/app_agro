@@ -20,23 +20,24 @@ export default function Login (props) {
                     <Topo />
                 </View>
                 
-                <View style= { styles.boxInputLogin}>
+                <View style= { styles.boxInputLogin }>
                     <View>
-                        <Text style={ styles.textInputLogin}>Usuário</Text>
+                        <Text style={ styles.textInputLogin }>Usuário</Text>
                         <TextInput style = { styles.inputUsuario } />
                     </View>
                     <View>
-                        <Text style={ styles.textInputLogin}>Senha </Text>
-                        <TextInput style = { styles. inputSenha }/>
+                        <Text style={ styles.textInputLogin }>Senha </Text>
+                        <TextInput style = { styles.inputSenha }/>
+                    </View>
+                    <View>
+                        <Pressable style={ styles.botao } onPress = { ()=>{props.navigation.navigate( 'Home' )} }>
+                            <Image style={ styles.iconBotao } source={icoEntrar}/>
+                            <Text style={ styles.textoBotao }>Entrar</Text>
+                        </Pressable>
                     </View>
                 </View>
 
-                <View>
-                    <Pressable style={styles.botao} onPress = { ()=>{props.navigation.navigate( 'Home' )} }>
-                        <Image style={styles.iconBotao} source={icoEntrar}/>
-                        <Text style={styles.textoBotao}>Entrar</Text>
-                    </Pressable>
-                </View>
+                
                 <View style={styles.button}>    
                     <Button 
                         title="Cadastrar"

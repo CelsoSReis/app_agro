@@ -14,10 +14,10 @@ const styles = StyleSheet.create ({
     },
     //Botão Login
     botao: {
-        marginTop:30,
+        marginTop: 30,
         marginBottom: 35,
-        width: 260,
-        height: 45,
+        width: 300,
+        height: 50,
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: '#ff0000',
@@ -40,7 +40,8 @@ const styles = StyleSheet.create ({
     },
     //BOX INPUT LOGIN
     boxInputLogin:{
-        marginVertical:140
+        marginVertical:140,
+        alignItems: 'center'
     },
     //Login Input
     inputUsuario: {
@@ -48,8 +49,8 @@ const styles = StyleSheet.create ({
         borderColor: '#fff',
         backgroundColor: '#fff',
         borderRadius: 30,
-        height: 40,
-        width: 260,
+        height: 50,
+        width: 300,
         padding: 10,
         margin: 7,
         marginBottom: 15,
@@ -61,8 +62,8 @@ const styles = StyleSheet.create ({
         borderWidth: 1,
         borderRadius: 30,
         backgroundColor: '#fff',
-        height: 40,
-        width: 260,
+        height: 50,
+        width: 300,
         padding: 10,
         margin: 7,
         textAlign: 'center',

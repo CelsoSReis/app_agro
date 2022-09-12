@@ -14,7 +14,7 @@ import iconBenfeitorias from './assets/iconBenfeitorias.png';
 import iconRelatorios from './assets/iconRelatorios.png';
 import imgFundo from '../login/imgLogin/fundo.png'
 
-export default function Home(){
+export default function Home(props){
     return(
         <ImageBackground source={imgFundo} style={styles.container}>
             <ScrollView style={styles.container}>
@@ -23,7 +23,7 @@ export default function Home(){
                 </View>
                     <View style={{flexWrap: 'wrap', flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
                     
-                    <Pressable style={styles.homeBotoes}>
+                    <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Animais' )} } >
                         <Image source={ iconAnimais } style={ styles.imgIcons}/>
                         <Text>Animais</Text>
                     </Pressable>
