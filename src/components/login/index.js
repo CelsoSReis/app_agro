@@ -1,5 +1,5 @@
 import React from "react";
-import{View, Button, Pressable, Text, Image, ImageBackground, TextInput} from 'react-native';
+import{View, Button, Pressable, Text, Image, ImageBackground, TextInput, StatusBar} from 'react-native';
 
 //Importando componentes
 import Topo from '../cabecalho';
@@ -15,7 +15,8 @@ import { color } from "react-native-reanimated";
 export default function Login (props) {
     return (
         <ImageBackground source={imgFundo} style={styles.container}>
-            <View>                
+            <View>
+                <StatusBar backgroundColor="green" Color="#fff" />
                 <View style={styles.header}>
                     <Topo />
                 </View>
