@@ -10,9 +10,7 @@ import styles from './style';
 //importação de Imagens
 import iconAnimais from './assets/iconAnimais.png';
 import iconMaquinas from './assets/iconMaquinas.png';
-import iconBenfeitorias from './assets/iconBenfeitorias.png';
-import iconRelatorios from './assets/iconRelatorios.png';
-import imgFundo from '../login/imgLogin/fundo.png'
+import imgFundo from '../SignIn/imgLogin/fundo.png';
 
 export default function Home(props){
     return(
@@ -25,29 +23,13 @@ export default function Home(props){
                     
                     <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Animais' )} } >
                         <Image source={ iconAnimais } style={ styles.imgIcons}/>
-                        <Text>Animais</Text>
+                        <Text>Fazenda</Text>
                     </Pressable>
                     
                     <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Maquinas' )} }>
                     <Image source={ iconMaquinas } style={ styles.imgIcons}/>
-                        <Text>Máquinas</Text>
+                        <Text>Agropecuária</Text>
                     </Pressable>
-
-                    <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Benfeitorias' )} }>
-                        <Image source={ iconBenfeitorias } style={ styles.imgIcons}/>
-                        <Text>Benfeitorias</Text>
-                    </Pressable>
-
-                    <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Agricola' )} } >
-                        <Image source={ iconBenfeitorias } style={ styles.imgIcons}/>
-                        <Text>Agrícola</Text>
-                    </Pressable>
-
-                    <Pressable style={styles.homeBotoes} onPress = { ()=>{props.navigation.navigate( 'Relatorios' )} }>
-                        <Image source={ iconRelatorios } style={ styles.imgIcons}/>
-                        <Text>Relatórios</Text>
-                    </Pressable>
-
                     
                 </View>
                 
