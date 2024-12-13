@@ -32,23 +32,23 @@ Tecnologias Utilizadas
 
 Back-End:
 
-Python 3.10+
+- Python 3.10+
 
-Django 4.x
+- Django 4.x
 
-PostgreSQL como banco de dados principal
+- PostgreSQL como banco de dados principal
 
 Front-End:
 
-Bootstrap para interface responsiva
+- Bootstrap para interface responsiva
 
-HTML5, CSS3 e JavaScript
+- HTML5, CSS3 e JavaScript
 
 Outros:
 
-Docker para conteinerização e implementação facilitada
+- Docker para conteinerização e implementação facilitada
 
-Git para controle de versão
+- Git para controle de versão
 
 Como Contribuir
 
@@ -58,7 +58,7 @@ Faça um fork do repositório.
 
 Clone seu repositório localmente:
 
-git clone https://github.com/sua-conta/gestao-rural.git
+`git clone https://github.com/sua-conta/gestao-rural.git`
 
 Crie um branch para sua contribuição:
 
