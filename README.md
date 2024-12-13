@@ -2,11 +2,11 @@
 
 Este é o repositório de Um sistema de Gestão Rural, uma aplicação projetada para facilitar a administração de propriedades rurais. A solução permite gerenciar informações relacionadas à produção agrícola, controle financeiro, inventário de equipamentos, entre outras funcionalidades que otimizam a produtividade e reduzem o desperdício no campo.
 
-Sobre o Projeto
+## Sobre o Projeto
 
 Inicialmente desenvolvida em uma linguagem diferente, a aplicação está sendo migrada para Python com o framework Django. O objetivo dessa migração é garantir maior flexibilidade, eficiência e manutenção mais fácil, aproveitando o ecossistema robusto e ativo de ferramentas e bibliotecas de Python.
 
-Principais Funcionalidades
+## Principais Funcionalidades
 
 Gestão Financeira: Controle de receitas, despesas e relatórios de balanços.
 
@@ -16,19 +16,19 @@ Planejamento Agrícola: Cadastro de safra, monitoramento de produtividade e hist
 
 Relatórios Personalizáveis: Geração de relatórios detalhados para tomada de decisão baseada em dados.
 
-Estrutura do Projeto
+## Estrutura do Projeto
 
 A migracão para Python e Django segue uma estrutura modular que permite manutenção e expansão fáceis:
 
-Core: Configuração principal e gestão de usuários.
+- Core: Configuração principal e gestão de usuários.
 
-Financeiro: Módulo para gestão de transações monetárias.
+- Financeiro: Módulo para gestão de transações monetárias.
 
-Produção: Funcionalidades voltadas ao gerenciamento de safras e produtividade.
+- Produção: Funcionalidades voltadas ao gerenciamento de safras e produtividade.
 
-Relatórios: Ferramentas para criação e visualização de relatórios.
+- Relatórios: Ferramentas para criação e visualização de relatórios.
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 Back-End:
 
@@ -50,7 +50,7 @@ Outros:
 
 - Git para controle de versão
 
-Como Contribuir
+## Como Contribuir
 
 Estamos abertos a contribuções! Se você deseja participar do desenvolvimento, siga os passos abaixo:
 
@@ -66,7 +66,7 @@ Crie um branch para sua contribuição:
 
 Implemente sua alteração e envie um pull request.
 
-Rodando o Projeto Localmente
+## Rodando o Projeto Localmente
 
 Clone o repositório:
 
@@ -88,6 +88,6 @@ Inicie o servidor:
 
 Acesse a aplicação no navegador pelo http://localhost:8000.
 
-Licença
+## Licença
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.
