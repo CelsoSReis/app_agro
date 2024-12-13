@@ -62,7 +62,7 @@ git clone https://github.com/sua-conta/gestao-rural.git
 
 Crie um branch para sua contribuição:
 
-git checkout -b minha-feature
+`git checkout -b minha-feature`
 
 Implemente sua alteração e envie um pull request.
 
@@ -70,21 +70,21 @@ Rodando o Projeto Localmente
 
 Clone o repositório:
 
-git clone https://github.com/sua-conta/gestao-rural.git
+`git clone https://github.com/sua-conta/gestao-rural.git`
 
 Instale as dependências:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 Configure as variáveis de ambiente com os detalhes do banco de dados.
 
 Execute as migrações do banco:
 
-python manage.py migrate
+`python manage.py migrate`
 
 Inicie o servidor:
 
-python manage.py runserver
+`python manage.py runserver`
 
 Acesse a aplicação no navegador pelo http://localhost:8000.
 
